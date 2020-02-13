@@ -38,6 +38,7 @@ def to_csv(rowdict):
 
 
 def preprocess(in_test_mode, PROJECT, BUCKET, start_year):
+  print('added print to test CI, can be deleted')
   import shutil, os, subprocess
   job_name = 'preprocess-babyweight-features' + '-' + datetime.datetime.now().strftime('%y%m%d-%H%M%S')
 
